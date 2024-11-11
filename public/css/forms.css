@@ -1,0 +1,52 @@
+/* Popup container */
+.popup {
+    display: none; /* Hide the popup by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+/* Close button */
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Popup content */
+.popup-content {
+    /* Add any additional styling for the content here */
+}
+
+/* Optional: Add styles for form elements */
+.popup form input[type="text"],
+.popup form input[type="email"],
+.popup form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.popup form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    cursor: pointer;
+}
+
+.popup form button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}

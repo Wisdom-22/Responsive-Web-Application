@@ -1,0 +1,1096 @@
+*{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	box-sizing:border-box;
+	font-family:"Poppins", sans-sarif, ;
+	font-size: 18px;
+	/* overflow: hidden; */
+}
+
+body{
+	/* overflow-y: hidden; */
+	position: relative;
+	padding-bottom: 275px;
+	min-height: 100vh;
+	font-family:"Arial", sans-sarif, Aptos;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    gap: 20rem;
+	background: #cc4933;
+}
+
+.signup_button, .signin_button {
+	border: none!important;
+	background: none;
+	padding-left: 1.3rem!important;
+	color: red;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Add your navigation styles here */
+.navigation {
+    overflow: hidden;
+	font-family: "Dosis", sans-serif;
+	align-items: center;
+	/* max-width: 30rem; */
+}
+
+.navigation ul {
+    position: relative;
+    width: 25rem;
+    height: 2.8rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+	place-content: center;
+}
+
+.navigation ul li {
+    margin: 0;
+}
+
+.navigation ul li a {
+    position: relative;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1em;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li button {
+    position: relative;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.navigation ul .navLine {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+    width: 4.3rem;
+	/* width: 100%; */
+    height: 0.1rem;
+    background: linear-gradient(45deg, #f5f5f5, #6eb5e1);
+    transition: .5s;
+}
+
+/* hover effect for the 1st nav list item */
+nav li:nth-child(1):hover~.navLine {
+    left: 1em;
+}
+
+/* hover effect for the 1st nav list item and so on*/
+nav li:nth-child(2):hover~.navLine {
+    left: 5.8em;
+}
+
+nav li:nth-child(3):hover~.navLine {
+    left: 10.8em;
+    width: 4.2rem;
+}
+
+nav li:nth-child(4):hover~.navLine {
+    left: 16em;
+    width: 4.2rem;
+}
+
+nav li:nth-child(5):hover~.navLine {
+    left: 21em;
+    width: 4.6rem;
+}
+
+.logo-img {
+    position: relative;
+    height: 4rem;
+    width: 6rem;
+    max-width: 10rem;
+    max-height: 9rem;
+    padding: 0 0;
+}
+
+.logo{
+	font-size: 32px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.navbar a{
+	position: relative;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none; 
+	margin-left: 50px;
+}
+
+.navbar a::before{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: .3s;
+}
+
+.navbar a:hover::before{
+	width: 100%;
+}
+
+.signup_heading {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 4rem;
+	padding: 2rem 0 0 5rem;
+}
+
+.signup_message {
+	font-family: 'DM Sans';
+	font-size: 15;
+	padding: 1.5rem 0 0 5rem;
+	background-color: #c2c3c2;
+	width: 83rem;
+	height: 7rem;
+	margin-left: 5rem;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.success_main {
+	padding: 10em 7em;
+}
+
+/* For Footer */
+.site-footer {
+	padding: 2em 5em 0 5em;
+	background: #cc4933;
+	font-size: 14px;
+	color: #c2c3c2;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 15rem;
+	margin: 0;
+}
+
+.site-footer p:last-child {
+	margin-bottom: 0;
+}
+
+.site-footer a {
+	color: #e2de10;
+	border-bottom: 1px solid transparent;
+}
+
+.site-footer a:hover {
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.site-footer h2 {
+	font-size: 22px;
+	margin-bottom: 28px;
+	letter-spacing: .05em;
+	color: #fff;
+}
+
+.site-footer .footer-link li {
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+.footer-social a {
+	line-height: 0;
+	border-radius: 50%;
+	margin: 0 5px 5px 0;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	display: inline-block;
+}
+
+.footer-social a:hover {
+	background: #fff;
+	border: #fff;
+	color: #000;
+}
+
+/*carousel */
+*{
+	margin: 0;
+	padding:0;
+}
+.slider{
+	width: 100%;
+	overflow: hidden;
+}
+.slide{
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+figure{
+	position: relative;
+	/*position: fixed;*/
+	left:0;
+	width: 400%; /*width dikali side*/
+	animation: 10s slide infinite;
+}
+
+.slide{
+	position: relative;
+	width: 25%; /*width dibagi side*/
+	float: left;
+}
+
+.slide h1{
+	position: absolute;
+	font-size: 3em;
+	width: 100%;
+	text-align: center;
+	margin-top:50px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slide img{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+@keyframes slide{
+	0%{
+		left: 0;
+	}
+	10%{
+		left: 0;
+	}
+	20%{
+		left:-100%;
+	}
+	30%{
+		left:-100%;
+	}
+	40%{
+		left:-200%;
+	}
+	50%{
+		left:-200%;
+	}
+	55%{
+		left:-300%;
+	}
+	65%{
+		left:-300%;
+	}
+	66%{
+		left:-200%;
+	}
+	74%{
+		left:-200%;
+	}
+	75%{
+		left:-100%;
+	}
+	85%{
+		left:-100%;
+	}
+	90%{
+		left:0;
+	}
+	100%{
+		left:0;
+	}
+}
+
+/*main contents section*/
+.banner-text{
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	color:blue;
+	padding: 10px;
+	margin:0px auto;
+	font-size:30px;
+}
+
+.banner-text p{
+	font-size:30px;
+}
+
+.banner-text h1{
+	font-size:40px;
+}
+
+
+.mainContents{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	background-color:#252d5d;
+	border: 4px solid yellow;
+}
+
+/*first section with text */
+.headingAndParagraphs{
+	flex-grow: 0.3;
+	margin: 5%;
+	height: 20vh;
+	width: 20%;
+	align-items: center;
+	justify-content:center;
+	border: 4px solid yellow;
+}
+
+.headingAndParagraphs h1{
+	font-weight: bold;
+	font-size: 40px;
+	color: white;
+}
+
+.headingAndParagraphs p{
+	margin-top: 30px;
+	font-size: 30px;
+	color: white;
+}
+
+/*second section with text on top of a image*/
+.classes{
+	position: relative;	
+	width: 15%;
+	height:200px;
+	margin-top:7px;
+	
+}
+
+.classes img{
+	max-width: 90%;
+	height: auto;	
+	object-fit: cover;
+}
+
+.classes h1{
+	position: absolute;
+	top: 25%;
+	color: white;
+	padding: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+
+.classes p{
+	position: absolute;
+	top: 25%;
+	color: #fff;
+	padding-top: 60px;
+	padding-left: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 32px;
+	
+}
+
+/*All buttons on top of the image in three sections*/
+
+.formButton{
+	position: absolute;
+	top: 0;
+	padding-top: 300px;
+	padding-left: 70px;
+	margin-right:20px;	
+}
+
+.joinToday{
+	font-family: "Roboto", sans-sarif;
+	font-size: 18px;
+	font-weight: bold;
+	background:#1E90FF;
+	width: 160px;
+	padding:10px;
+	text-align:center;
+	text-decoration:none;
+	text-transform: uppercase;
+	color:#fff;
+	border-radius: 30px;
+	cursor:pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+
+.joinToday:hover, .joinToday:focus, .joinToday:active{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*circular frame section*/
+.meetTheTeam{
+	display: flex;
+	width: 85%;
+	margin: 0 auto;
+	justify-content: space-evenly;
+}
+.team{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items:center;
+	margin-left: 40px;
+
+}
+
+.team img{
+	height: 300px;
+	width:300px;
+	border-radius: 50%;
+	border: 10px solid #fff;
+	object-fit: cover;
+}
+
+/*Join community section*/
+.joinCommunity{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.joinCommunity img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+
+.joinCommunity h1{
+	position: absolute;
+	font-size: 90px;
+	width: 100%;
+	top: 25%;
+	left: 35%;
+	color: blue;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/*this button uses the styling that is above*/
+.joinCommunityForm{
+	position: absolute;
+	top: 70%;
+	left:50%;
+
+}
+
+/*success stories section*/
+.mainImageContainer{
+	margin: 0px auto;
+	position: relative; /*this is relative so the position of the text on this image will be absolute */
+	width: 100%;
+	height: 30%;
+}
+
+.mainImageContainer img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;/*crops the photo to fit the container */
+}
+
+
+.storiesContainer{
+	display: flex;
+	flex-direction:column;
+	width: 85%;
+	height: auto;
+	margin: 0 auto;
+	justify-content: space-evenly;
+}
+
+.stories{
+	width: 100%;
+	height: 100%;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	margin-left: 40px;
+	box-shadow:0 0 20px 2px rgba(0, 0, 0, .1);
+	transition:1s;
+
+}
+
+.stories p{
+	width:70%;
+	height: 250px;
+	display:block;
+	border-radius:5px;
+	margin:0 auto;
+	margin-top:70px;
+	
+}
+
+.stories img{
+	height: 300px;
+	width:300px;
+	border-radius: 50%;
+	border: 10px solid #fff;
+	object-fit: cover;
+	display:block;
+	
+	
+}
+
+.stories:hover{
+	transform:scale(1.1);
+	z-index:2;
+	background-color:blue;
+}
+
+/*new classes section*/
+.newClassesContainer{
+	display: flex;
+	flex-direction:column;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-evenly;
+	padding: 5px 0 6px 4em;
+}
+
+.newClassesContainer h1{
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.newClassesContainer p{
+	
+}
+	
+.newClass{
+	width: 100%;
+	height: 100%;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	margin-left: 40px;
+
+}
+
+.classDetails{
+	display: flex;
+	flex-direction: column;
+}
+
+.newClass h1{
+	width: 100%;
+	height: 50%;
+}
+
+
+.newClass p{
+	width: 100%;
+	height: 50%;
+}
+
+.newClass img{
+	height: 300px;
+	width:300px;
+	border-radius: 50%;
+	border: 10px solid #fff;
+	object-fit: cover;
+}
+/****************************************start here*********************************************/
+
+/*this section is for the class page*/
+.classImageContainer{
+	margin: 0px auto;
+	position: relative;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.classImageContainer img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	
+}
+
+.underlayImages{
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	width: 50%;
+	height:50%;
+	color: blue;	
+	overflow: hidden;
+	margin:0px auto;
+
+}
+
+.classesContainer{
+	width: 95%;
+	height: auto;
+	margin: 0 auto;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+}
+.classes{
+	width: 30%;
+	height: auto;
+	display:flex;
+	position:relative;
+	justify-content: center;
+	align-items:center;
+
+	
+}
+
+.classes img{
+	width:100%;
+	height: auto;
+	
+}
+
+.classesHeading{
+	position:absolute;
+	width: 100%;
+	height:90px;
+	top: 0%;
+	font-size:39px;
+
+}
+
+.classesHeading h1{
+	width: 100%;
+	height:40px;
+	font-size:30px;
+	text-align:center;
+	color:blue;
+	
+}
+
+/*how to make the text appear when you hover around the image*/
+
+.classesDescription{
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	position:absolute;
+	background:rgba(0,0,0,0.6);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	opacity:0;
+	transition:0,6s;
+}
+
+
+.classesDescription:hover{
+	opacity:1;
+}
+
+.classesDescription h1{
+	height:30%;
+	font-size:45px;
+	color:#ffe100;
+	margin-bottom:15px;
+}
+
+.classesDescription p{
+	width:100%;
+	height:20px;
+	font-size:19px;
+	color:#ffe100;
+	margin-bottom:90px;
+	
+}
+
+.classesDescription > *{
+	transform:translateY(25px);
+	transition:transform 0.6s;
+}
+
+.classesDescription:hover > *{
+	transform:translateY(0px);
+	
+}
+/*first button in the in the classes page*/
+.classJoinToday{
+	font-family: "Roboto", sans-sarif;
+	font-size: 18px;
+	font-weight: bold;
+	background:#1E90FF;
+	width: 160px;
+	padding:10px;
+	text-align:center;
+	text-decoration:none;
+	text-transform: uppercase;
+	color:#fff;
+	border-radius: 30px;
+	cursor:pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+	margin-top:150px;
+
+}
+
+
+/*second button that appears when the mouse hovers on each class*/
+.explainMore{
+	font-family: "Roboto", sans-sarif;
+	font-size: 12px;
+	font-weight: bold;
+	background:#1E90FF;
+	width: 180px;
+	padding:12px;
+	text-align:center;
+	text-decoration:none;
+	text-transform: uppercase;
+	color:#fff;
+	border-radius: 30px;
+	cursor:pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+	margin-top: 30px;
+}
+
+
+/*creating each inidividual pages for all the classes in the class.php page*/
+.classContainer{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+}
+
+.classMainHeading{
+	width: 100%;
+	height: auto;
+	flex-grow: 1;
+	text-align:center;
+	padding-bottom: 40px;
+	font-size:50px;
+}
+
+.classMainDescription{
+	width:50%;
+	height: auto;
+
+	padding-bottom: 30px;
+}
+
+.classMainDescription h3{
+	padding-bottom:30px;
+	
+}
+
+/*about us page section*/
+.aboutUsContainer {
+	width: 100%;
+	height: auto;
+	display:flex;
+	flex-direction:column;
+}
+
+
+.developer{
+	width: 100%;
+	height: 40%;
+	display:flex;
+	
+	justify-content: space-evenly;
+}
+
+.developerDescription{
+	width:50%;
+	height:auto;
+	margin-top:50px;
+}
+
+.developerDescription p{
+	margin:0 auto;
+}
+
+.imageDeveloper img{
+	height: 250;
+	width:280px;
+	border-radius: 50%;
+	border: 10px solid #fff;
+	object-fit: cover;
+	display:block;
+	
+}
+
+/*this section is for the gallery section*/
+.galleryContainer{
+	width: 90%;
+	height:auto;
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-evenly;
+	flex-wrap:wrap;
+	flex-direction:row;
+}
+
+.galleryImage{
+	width:30%;
+	height:auto;
+	
+}
+
+.galleryImage img {
+	width:70%;
+	height: auto;
+	object-fit: cover;
+	border: 5px solid blue;
+}
+
+.profile {
+	background-image: url(../images/sunset-bg.jpg);
+	position: relative;
+	padding-bottom: 270px;
+	min-height: 100vh;
+	padding: 5em 5em;
+	color: #1e1193;
+}
+
+.profile .wrapper {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	gap: 1em;
+	justify-content: center;
+}
+
+.profile-info {
+	/* border: solid 1px; */
+	padding: 0;
+	width: 15rem;
+	height: auto;
+	/* padding: 1em; */
+}
+
+.profile-content {
+	width: 40rem;
+	/* border: solid 1px; */
+	padding: 1em 1em;
+	display:flex;
+	flex-direction: column;
+	gap: 3em;
+	overflow: hidden;
+}
+
+.profile-intro {
+	border: solid 1px;
+	padding: 2em 1em;
+}
+
+.tier-info {
+	border: solid 1px;
+	padding: 2em 1em;
+}
+
+.profile-info-img {
+	background-image: url("../images/profile.jpg");
+	height: 75%;
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	object-fit:contain;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.profile-info-about {
+	background: #000;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 1em 1.5em;
+	color: #fff;
+}
+
+.follow-button {
+	background: #fff;
+	color: #000;
+	border-radius: 12px;
+	text-decoration: none;
+	padding: 5px;
+	margin: 0 0 1.5em 1.5em;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	max-width: fit-content;
+}
+
+.profile-info-username {
+	padding: 1.5em 2em;
+	font-weight: 800;
+	font-family: sans-serif;
+}
+
+.banner-text{
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	color: blue;
+	padding: 10px;
+	margin:0px auto;
+
+}
+
+/*join now section*/
+.joinNowContainer{ /*the styles the entire content of the join now page*/
+	width: 90%;
+	height: 700px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction:row;
+}
+
+.classContainer{/*styles each inidividual class content */
+	width: 30%;
+	height: 350px;
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-evenly;
+
+}
+
+.joinNowImageContainer{/*the styles each container that houses the images*/
+	width: 100%;
+	height: 100%;
+	display:flex;
+	justify-content: center;
+	position: relative;
+}
+
+.joinNowImageContainer img{/*this styles each individual image*/
+	height: 100%;
+	width:100%;
+	object-fit:cover;
+}
+
+.classContent p{ /*styles each paragraph in each section in the joinNow pagegit */
+	margin-top: 10px;
+}
+
+/*the contact us section*/
+.contactUsContainer{
+	width: 80%;
+	height:auto;
+	margin-top:10px;
+	margin:0 auto;
+}
+
+.contactUsContainer h1{
+	font-size:40px;
+	padding-bottom:90px;
+	text-align:center;
+	margin:0 auto;
+}
+
+
+.contactUsContainer p{
+	width: 70%;
+	font-size:30px;
+	margin:0 auto;
+	margin-bottom:30px;
+}
+
+/*about us page section*/
+.aboutUsContainer {
+	width: 100%;
+	height: auto;
+	display:flex;
+	flex-direction:column;
+}
+
+
+.developer{
+	width: 100%;
+	height: 40%;
+	display:flex;
+	
+	justify-content: space-evenly;
+}
+
+.developerDescription{
+	width:50%;
+	height:auto;
+	margin-top:50px;
+}
+
+.developerDescription p{
+	margin:0 auto;
+}
+
+.imageDeveloper img{
+	height: 250;
+	width:280px;
+	border-radius: 50%;
+	border: 10px solid #fff;
+	object-fit: cover;
+	display:block;
+	
+}
+
+/*this section is for the gallery section*/
+.galleryContainer{
+	width: 90%;
+	height:auto;
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-evenly;
+	flex-wrap:wrap;
+	flex-direction:row;
+}
+
+.galleryImage{
+	width:30%;
+	height:auto;
+	
+}
+
+.galleryImage img {
+	width:70%;
+	height: auto;
+	object-fit: cover;
+	border: 5px solid blue;
+}
+
+.main-carousel-body, .newClassesContainer{
+	background: #f5f5dc;
+}
